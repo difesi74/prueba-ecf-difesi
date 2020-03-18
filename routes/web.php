@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('users/send_notification/{user_id}', 'Controller@sendNotification')->name('users-send-notification');
